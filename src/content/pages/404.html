@@ -1,0 +1,43 @@
+---
+title: "Page not found"
+description: "Sorry, that page doesn’t exist."
+permalink: 404.html
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/base.html" %} {% block body %}
+
+<style>
+  /* 404-only layout */
+  .cs-404 {
+    min-height: calc(100vh - 200px); /* adjust if header/footer differ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: clamp(48px, 10vh, 140px) 16px;
+    gap: 16px;
+  }
+
+  .cs-404 h1 {
+    font-size: clamp(64px, 12vw, 140px);
+    line-height: 1;
+  }
+
+  .cs-404 a {
+    margin-top: 16px;
+  }
+</style>
+
+<section class="cs-container cs-404">
+  <h1>404</h1>
+  <p>That page doesn’t exist.</p>
+  <a
+    class="cs-btn"
+    href="/contact/"
+    >Contact us</a
+  >
+</section>
+
+{% endblock %}
