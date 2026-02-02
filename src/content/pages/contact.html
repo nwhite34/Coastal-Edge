@@ -7,14 +7,7 @@ permalink: "/contact/"
 {% extends "layouts/base.html" %}
 {% block head %}
 <link rel="stylesheet" href="/assets/css/contact.css" />
-<link
-  rel="preload"
-  as="image"
-  href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" />
-<link
-  rel="preload"
-  as="image"
-  href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}" />
+<link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 640, height: 600 }) | avif %}" /> <link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 576, height: 640 }) | avif %}" />
 {% endblock %}
 
 {% block body %}
@@ -192,46 +185,46 @@ permalink: "/contact/"
         <!--Mobile Image-->
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 576, height: 640 }) | avif %}"
           type="image/avif" />
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | webp %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 576, height: 640 }) | webp %}"
           type="image/webp" />
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | jpeg %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 576, height: 640 }) | jpeg %}"
           type="image/jpeg" />
 
         <!--Tablet Image-->
         <source
           media="(max-width: 1024px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | avif %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 820, height: 1372 }) | avif %}"
           type="image/avif" />
         <source
           media="(max-width: 1024px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | webp %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 820, height: 1372 }) | webp %}"
           type="image/webp" />
         <source
           media="(max-width: 1024px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | jpeg %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 820, height: 1372 }) | jpeg %}"
           type="image/jpeg" />
 
         <!--Desktop Image-->
         <source
           media="(min-width: 1024px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | avif %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1084, height: 1156 }) | avif %}"
           type="image/avif" />
         <source
           media="(min-width: 1024px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | webp %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1084, height: 1156 }) | webp %}"
           type="image/webp" />
         <source
           media="(min-width: 1024px)"
-          srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}"
+          srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}"
           type="image/jpeg" />
         <img
-          src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}"
+          src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}"
           alt="building"
           width="542"
           height="578"
