@@ -16,6 +16,6 @@ module.exports = {
     facebook: "https://www.facebook.com/coastaledgelandscaping",
     instagram: "https://www.instagram.com/coastaledgelandscaping",
   },
-  domain: "https://www.coastaledgelandscaping.com.au",
+  domain: "https://coastal-edge-landscaping.netlify.app",
   isProduction: process.env.ELEVENTY_ENV === "PROD",
 };
